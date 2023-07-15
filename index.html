@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>INSPECCIONES TECNICAS</title>
+</head>
+<body>
+    <header>
+        <h1>INFORME DE INSPECCIÓN(Formulario aplicable en Inspecciones Extraordinarias)</h1>
+        <span>FORMULARIO A/1 – R.G PNA 3-036</span>
+        <nav class="nav activo">
+            <ul>
+                <li><a href="#">Explora</a></li>
+                <li><a href="#">Detalles</a></li>
+                <li><a href="#">Item3</a></li>
+                <li><a href="#">Item4</a></li>
+                <li><a href="#">Item5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h3>DETALLE DEL BUQUE:</h3>
+    <form id="buscador" >
+    <div class="datosDelBuque">
+        <div>1. Nombre del buque:<input class="btnBuscar" type="text" placeholder="Ingrese nombre del buque" maxlength="12"></div>
+        <div>2. Pabellón del buque:<input class="btnBuscar" type="text" placeholder="Ingrese pabellón del buque" maxlength="12"></div>
+        <div>3. Tipo del Buque: <select name="tipo de buque"> 
+            <option value="Rada o Ria">Rada o Ria</option>
+            <option value="Marítima Costera">Marítima Costera</option>
+            <option value="Marítima de Altura">Marítima de Altura</option>
+            <option value="Remolcador">Remolcador</option>
+            <option value="Draga">Draga</option>
+            <option value="Tanque">Tanque</option>
+            <option value="Mercante">Mercante</option>
+            <option value="Deportiva o Placer">Deportiva o Placer</option>
+          </select>
+        </div>
+        <div>4. Distintivo de llamada:<input class="btnBuscar" type="text" placeholder="Ingrese distintivo de llamada" maxlength="12"></div>
+        <div>5. Matrícula / Número OMI:<input class="btnBuscar" type="text" placeholder="Ingrese matrícula" maxlength="12"> <input class="btnBuscar" type="text" placeholder="Ingrese Numero de OMI" maxlength="12"></div>
+        <div>6. Arqueo bruto:<input class="btnBuscar" type="text" placeholder="Ingrese arqueo bruto" maxlength="12"></div>
+        <div>7. Año de construcción:<input class="btnBuscar" type="text" placeholder="Ingrese año de construcción" maxlength="12"></div>
+        <div>8. Peso muerto (cuando proceda):<input class="btnBuscar" type="text" placeholder="Ingrese peso muerto" maxlength="12"></div>
+    </div>
+    <div class="datosDelBuque">
+        <div>9. Apellido y Nombre del Capitán / Patrón y Documento de Embarco:<input class="btnBuscar" type="text" placeholder="Ingrese apellido y nombre" maxlength="12"></div>
+        <div>Sociedad de Clasificación:<input class="btnBuscar" type="text" placeholder="Ingrese Sociedad de Clasificación muerto" maxlength="12"></div>
+        <div>10. Identificación y Pormenores del Propietario registrado:<input class="btnBuscar" type="text" placeholder="Ingrese Identificación del Propietario" maxlength="12"></div>
+        <div>Identificación y Pormenores de la Compañía:<input class="btnBuscar" type="text" placeholder="Ingrese Identificación de la Compañía" maxlength="12"></div>
+        <div>TIPO DE LA INSPECCIÓN:</div>
+            <div>
+            <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Inspección Inicial (II)">
+            <label for="miCheckbox">Inspección Inicial (II)</label>
+            <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Inspección Más Detalla (ID)">
+            <label for="miCheckbox">Inspección Más Detalla (ID)</label>
+            </div>
+        <div>12. Fecha de la inspección:<input class="btnBuscar" type="date" placeholder="Ingrese fecha de la inspección" maxlength="12"></div>
+        <div>13. Lugar de inspección:<input class="btnBuscar" type="text" placeholder="Ingrese el lugar de la inspección" maxlength="12"></div>
+    </div>
+    <div>
+        <div><h3>14. Áreas inspeccionadas:</h3></div>
+        <div class="areas">
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Puente de mando">
+                <label for="miCheckbox">Puente de mando</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Bodegas / tanques de carga">
+                <label for="miCheckbox">Bodegas / tanques de carga</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Tanques de lastre">
+                <label for="miCheckbox">Tanques de lastre</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Sala de máquinas">
+                <label for="miCheckbox">Sala de máquinas</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Cuarto timón de emergencia">
+                <label for="miCheckbox">Cuarto timón de emergencia</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Estiba de la carga">
+                <label for="miCheckbox">Estiba de la carga</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Conjunto de Barcazas">
+                <label for="miCheckbox">Conjunto de Barcazas</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Puestos de reunión">
+                <label for="miCheckbox">Puestos de reunión</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Alojamientos/ cocina">
+                <label for="miCheckbox">Alojamientos/ cocina</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Espacios de pasajeros">
+                <label for="miCheckbox">Espacios de pasajeros</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Cubierta de vehículos">
+                <label for="miCheckbox">Cubierta de vehículos</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Otros">
+                <label for="miCheckbox">Otros</label>
+            </div>
+        </div>
+        <div><h3>15. Controles operacionales (si los hay):</h3></div>
+        <div class="areas">
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Abandono del buque.">
+                <label for="miCheckbox">Abandono del buque.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Lucha contra incendio.">
+                <label for="miCheckbox">Lucha contra incendio.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Bomba de incendio Emergencia.">
+                <label for="miCheckbox">Bomba de incendio Emergencia.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Equipo separador de hidrocarburos.">
+                <label for="miCheckbox">Equipo separador de hidrocarburos.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Generador emergencia.">
+                <label for="miCheckbox">Generador emergencia.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Timón de emergencia.">
+                <label for="miCheckbox">Timón de emergencia.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Equipos de comunicaciones.">
+                <label for="miCheckbox">Equipos de comunicaciones.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Control de averías.">
+                <label for="miCheckbox">Control de averías.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Otros.">
+                <label for="miCheckbox">Otros.</label>
+            </div>
+        </div>
+
+
+        <div><h3>.16 Certificados y Documentación:</h3></div>
+            <div class="certificados">    
+                <div>a) Título</div>
+                <div>b) Autoridad expedidora</div>
+                <div>c) Fecha de Expedición </div>
+                <div> Fecha de Expiración</div>
+            </div>
+            <div class="datosDeCertificados">
+                <div>1- Certificado de Arqueo.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+
+                <div>2- Certificado de Matrícula.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+                <div>3- Certificado de Dotación Mínima.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+                <div>4- Certificado de Seguridad de la Navegación.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+                <div>5- Certificado Prev. Cont. Aguas Sucias.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+                <div>6- Licencia Estación de Radio.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+                <div>7-Certificado Prev. Contaminación por Basuras.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+                <div>8- Certificado Prev. Contaminación por HC.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+                <div>9- Certificado Balsas Salvavidas.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+                <div>10- Certificado Radiobaliza.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+                <div>11- Certificado AIS.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+                <div>12-Certificado extintores.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+                <div>13- Certificado Gestión de la Seguridad.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+                <div>14- Certificado Demostrativo de Cumplimiento.</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese Autoridad expedidora" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expedición" maxlength="12"></div>
+                <div><input class="btnBuscar" type="date" placeholder="Ingrese fecha de Expiración" maxlength="12"></div>
+                
+            </div>
+
+
+
+
+
+    </div>
+    <script src="./pokemon.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

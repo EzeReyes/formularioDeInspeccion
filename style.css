@@ -1,0 +1,40 @@
+
+/* Reset de estilos para asegurar una base consistente en diferentes navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.datosDelBuque {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+    background-color: #f0f0f0;
+    padding: 1px;
+}
+
+.areas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.certificados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.datosDeCertificados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}

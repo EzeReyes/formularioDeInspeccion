@@ -18,24 +18,25 @@
             <img src="./img/pna.png" alt="imagenPNA">
             <div class="logoPna">
                 <p class="prefectura">PREFECTURA</p>
-                <p>NAVAL ARGENTINA</p>
+                <p class="naval">NAVAL ARGENTINA</p>
             </div>
         </div>
     </div>    
     <span class="form">FORMULARIO A/1 – R.G PNA 3-036</span>
     </header>
     <div class="tituloPrincipal">
-        <h1>INFORME DE INSPECCIÓN</h1>
+        <h1 class="titulo">INFORME DE INSPECCIÓN</h1>
         <h3>(Formulario aplicable en Inspecciones Extraordinarias)</h3>
     </div>
 
-    <h3>DETALLE DEL BUQUE:</h3>
+
+    <h3 class="titulo">DETALLE DEL BUQUE:</h3>
     <form id="buscador" >
     <div class="datosDelBuque">
         <div>1. Nombre del buque:<input class="btnBuscar" type="text" placeholder="Ingrese nombre del buque" maxlength="12"></div>
         <div>2. Pabellón del buque:<input class="btnBuscar" type="text" placeholder="Ingrese pabellón del buque" maxlength="12"></div>
         <div>3. Tipo del Buque: <select name="tipo de buque"> 
-            <option value="Rada o Ria">Rada o Ria</option>
+            <option title="Rada" value="Rada o Ria">Rada o Ria</option>
             <option value="Marítima Costera">Marítima Costera</option>
             <option value="Marítima de Altura">Marítima de Altura</option>
             <option value="Remolcador">Remolcador</option>
@@ -67,7 +68,7 @@
         <div>13. Lugar de inspección:<input class="btnBuscar" type="text" placeholder="Ingrese el lugar de la inspección" maxlength="12"></div>
     </div>
     <div>
-        <div><h3>14. Áreas inspeccionadas:</h3></div>
+        <div><h4>14. Áreas inspeccionadas:</h4></div>
         <div class="areas">
             <div>
                 <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Puente de mando">
@@ -118,7 +119,7 @@
                 <label for="miCheckbox">Otros</label>
             </div>
         </div>
-        <div><h3>15. Controles operacionales (si los hay):</h3></div>
+        <div><h4>15. Controles operacionales (si los hay):</h4></div>
         <div class="areas">
             <div>
                 <input type="checkbox" id="miCheckbox" name="miCheckbox" value="Abandono del buque.">
@@ -159,7 +160,7 @@
         </div>
 
 <br><br>
-        <div><h3>.16 Certificados y Documentación:</h3></div>
+        <div><h4>.16 Certificados y Documentación:</h4></div>
             <div class="certificados">    
                 <div>a) Título</div>
                 <div>b) Autoridad expedidora</div>
@@ -239,12 +240,117 @@
                 
             </div>
 
+            <span class="form">FORMULARIO A/2 – R.G PNA 3-036</span>
+
+            <div class="grid-container">
+                <div>Nombre del buque:</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese nombre del buque" maxlength="12"></div>
+                <div>Bandera:</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese pabellón del buque" maxlength="12"></div>
+                <div>Matrícula:</div>
+                <div><input class="btnBuscar" type="text" placeholder="Ingrese pabellón del buque" maxlength="12"></div>
+            </div>
 
 
+            <div>17.Información del último reconocimiento anual o intermedia.</div>
+            <div class="flex-container">
+                <span>           N°</span>
+                <span>Fecha de Reconocimiento</span>
+                <span>Autoridad que efectuó el reconocimiento</span>
+                <span>Puerto / País</span>
+            </div>
+
+            <div>
+                <div class="desea"><p>Desea Agregar Información</p></div>
+                <button id="a" false>True</button>
+                <button id="b" false>False</button>                
+            </div>
+            <div id="miElemento" class="miElemento"></div>
+            <div id="miElemento2" class="informacion"></div> 
+            <button id="c" style="display: none;">Finalizar</button>                
+
+            <div class="btnDef">
+            <div>18. Deficiencias:</div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="si">
+                <label for="miCheckbox">Si</label>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="no">
+                <label for="miCheckbox">No</label>
+            </div>
+            </div>
+
+            <div class="btnDef">
+            <div>19.Buque con Impedimento de salida:</div>
+            <div>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="si">
+                <label for="miCheckbox">Si</label>
+                <input type="checkbox" id="miCheckbox" name="miCheckbox" value="no">
+                <label for="miCheckbox">No</label>
+            </div>
+            </div>
+
+            <div class="grid-cont">
+
+            <div class="flex-cont">20.Fecha y Hora Impedimento de Salida (si corresponde):
+                <input class="btnBuscar" type="datetime-local" placeholder="------" maxlength="12">
+            </div>
+
+            <div class="flex-cont">21.Fecha y Hora en que se levantó Impedimento de Salida:
+                <input class="btnBuscar" type="datetime-local" placeholder="------" maxlength="12">
+            </div>
+
+            </div>
 
 
-    </div>
-    <script src="./pokemon.js"></script>
-    <script src="./script.js"></script>
+            <div class="infoDeViaje">
+
+                <div class="flex-cont">22.Puerto de Procedencia:
+                    <input class="btnBuscar" type="text" placeholder="Ingrese Puerto de Procedencia" maxlength="20">
+                </div>
+    
+                <div class="flex-cont">23.Puerto de Destino:
+                    <input class="btnBuscar" type="text" placeholder="Ingrese Puerto de Destino" maxlength="20">
+                </div>
+
+                <div class="flex-cont">24.Estimativa de arribo (ETA):                    
+                    <input class="btnBuscar" type="datetime-local" placeholder="------" maxlength="12">
+                </div>
+    
+                </div>
+
+            <div class="grid-cont">
+                <div class="flex-cont">25.Tipo de Carga:
+                    <select id="mySelect" name="tipo de Carga">
+                        <option title="Rada" value="SIN CARGA">SIN CARGA</option> 
+                    </select>
+                </div>
+                <div class="flex-cont">Cantidad:
+                    <select id="mySelect" placeholder="ffff" name="Cantidad"> 
+                        <option title="Rada" value="EN LASTRE">EN LASTRE</option>
+                        <option title="Rada" value="KG">KG</option>
+                        <option value="TN">TN</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>26.	Cantidad e Identificación de las Barcazas (si corresponde):
+                <input class="btnBuscar" type="text" placeholder="Ingrese Barcazas" maxlength="20">
+            </div>
+            
+
+            <div>
+                DETALLE DE LA AUTORIDAD MARÍTIMA: PREFECTURA MAR DEL PLATA
+
+Dirección oficina expedidora: AV. DE LOS PESCADORES 851 – MAR DEL PLATA……………………………………………………………….
+
+Teléfono-Fax: (0223) 480-0715………………………………………………………………………………….................................................
+
+E-mail: mpla@prefecturanaval.gov.ar......................................…………………………………………………………………………………………….
+
+            </div>
+        </div>
+    <script src="especies.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>

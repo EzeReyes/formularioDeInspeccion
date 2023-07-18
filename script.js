@@ -65,3 +65,64 @@ c.addEventListener("click", function(event) {
 function sumar () {
     texto++;
 }
+
+crear.addEventListener("click", function(event) {
+    event.preventDefault();
+    crearFirma()
+})
+
+
+function crearFirma() {
+    let container = document.getElementById("container");
+    container.style.display="grid";
+    container.style.width="25rem";
+    container.style.textWrap="nowrap";
+    container.style.gridTemplateColumns="repeat(2, 1fr)";
+
+    // Crear contenedor div
+    let div = document.createElement("div");
+    div.style.margin="5rem 0 10px 10px";
+    div.style.display="flex";
+    div.style.flexDirection="column";
+    // Crear campo de texto
+    let input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = "Ingrese Nombre y Apellido";
+    input.maxLength = 30;
+    input.style.textAlign="center";
+    input.style.width="15rem";
+
+    // Crear etiqueta select
+    let select = document.createElement("select");
+    select.style.textAlign="center";
+
+    // Crear opciones para el select
+    let opciones = [
+        "JERARQUIA",
+        "PREFECTO PRINCIPAL",
+        "PREFECTO",
+        "SUBPREFECTO",
+        "OFICIAL PRINCIPAL",
+        "OFICIAL AUXILIAR",
+        "OFICIAL AYUDANTE"
+    ];
+
+    for (let i = 0; i < opciones.length; i++) {
+        let option = document.createElement("option");
+        option.value = opciones[i];
+        option.text = opciones[i];
+        select.appendChild(option);
+    }
+
+    // Agregar los elementos al contenedor
+    div.appendChild(input);
+    div.appendChild(select);
+
+    container.appendChild(div);
+}
+
+finalizarFirma.addEventListener("click", function(event) {
+    event.preventDefault();
+    crear.style.display="none";
+    finalizarFirma.style.display="none";
+})

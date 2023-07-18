@@ -152,3 +152,40 @@ margin-bottom: 3rem;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 3rem;
 }
+
+.cant {
+    display: flex;
+}
+
+.dimensiones {
+    width: 3rem;
+}
+
+.barcazas {
+    margin: 2rem 0;
+}
+
+.dim {
+    margin: 2rem 0;
+}
+
+
+.signature-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid #000;
+}
+
+.signature {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    align-items: center;
+    justify-content: center;
+    margin-top:5rem;
+}
+
+footer {
+    margin-top: 3rem;
+    text-align: justify;
+}

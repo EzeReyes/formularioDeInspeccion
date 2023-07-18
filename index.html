@@ -325,32 +325,142 @@
                     </select>
                 </div>
                 <div class="flex-cont">Cantidad:
-                    <select id="mySelect" placeholder="ffff" name="Cantidad"> 
-                        <option title="Rada" value="EN LASTRE">EN LASTRE</option>
-                        <option title="Rada" value="KG">KG</option>
-                        <option value="TN">TN</option>
-                    </select>
+                    <div class="cant">
+                        <input class="btnBuscar" type="text" placeholder="cant" maxlength="12">
+                        <select id="mySelect" placeholder="ffff" name="Cantidad"> 
+                            <option title="Rada" value="EN LASTRE">EN LASTRE</option>
+                            <option title="Rada" value="KG">KG</option>
+                            <option value="TN">TN</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
-            <div>26.	Cantidad e Identificación de las Barcazas (si corresponde):
+            <div class="barcazas">26.Cantidad e Identificación de las Barcazas (si corresponde):
                 <input class="btnBuscar" type="text" placeholder="Ingrese Barcazas" maxlength="20">
             </div>
             
 
             <div>
-                DETALLE DE LA AUTORIDAD MARÍTIMA: PREFECTURA MAR DEL PLATA
 
-Dirección oficina expedidora: AV. DE LOS PESCADORES 851 – MAR DEL PLATA……………………………………………………………….
 
-Teléfono-Fax: (0223) 480-0715………………………………………………………………………………….................................................
-
-E-mail: mpla@prefecturanaval.gov.ar......................................…………………………………………………………………………………………….
+                <table class="dim">
+                    <thead>
+                    <tr>
+                        <th>Dimensiones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Eslora:</td>
+                        <td><input type="text" class="dimensiones" placeholder="ESL" maxlength="5">
+                            <select name="" id="">
+                                <option value="------">-----</option>
+                                <option value="Metros">Metros</option>
+                                <option value="Pies">Pies</option>
+                            </select>
+                        </td>
+                        <td>Personal a Bordo:</td>
+                        <td>
+                            <input type="text" placeholder="A bordo" maxlength="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Calado Proa:</td>
+                        <td>
+                            <input type="text" class="dimensiones" placeholder="PR" maxlength="5">
+                            <select name="" id="">
+                                <option value="------">-----</option>
+                                <option value="Metros">Metros</option>
+                                <option value="Pies">Pies</option>
+                            </select>
+                        </td>
+                        <td>NAT:</td>
+                        <td>
+                            <input type="text" placeholder="NAT" maxlength="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Calado Popa:</td>
+                        <td>
+                            <input type="text" class="dimensiones" placeholder="PP" maxlength="5">
+                            <select name="" id="">
+                                <option value="------">-----</option>
+                                <option value="Metros">Metros</option>
+                                <option value="Pies">Pies</option>
+                            </select>
+                        </td>
+                        <td>NAN:</td>
+                        <td>
+                            <input type="text" placeholder="NAN" maxlength="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dotación Mínima:</td>
+                        <td>
+                            <input type="text" placeholder="Dotación" maxlength="15">
+                        </td>
+                        <td>Potencia Máquinas:</td>
+                        <td>
+                            <input type="text" placeholder="Potencia Máquinas" maxlength="15"> KW
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Potencia Eléctrica:</td>
+                        <td>
+                            <input type="text" placeholder="Potencia Eléctrica" maxlength="15"> KW
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                
 
             </div>
+
+            <div>
+                
+            </div>
+            
+            <div class="signature-container">
+                <div>
+                    <div class="signature">
+                        <div>N.A<input type="text" placeholder="Ingrese Nombre y Apellido" maxlength="15"></div>
+                        <div>L.E<input type="text" placeholder="Ingrese L.E" maxlength="15"></div>
+                    </div>
+                    Firma y Aclaración Capitán/Patrón Nº Libreta Embarco
+                </div>
+
+
+                <div>
+
+                    <div>
+                        <div class="signature">
+                        <div id="container"></div>
+                        <button id="crear">Agregar Firma</button>
+                        <button id="finalizarFirma">Finalizar Firma</button>
+                        Firma y Aclaración Autoridad Marítima	
+                </div>
+
+            </div>
+            
         </div>
-    <script src="especies.js"></script>
-    <script src="script.js"></script>
+
+            </div>
+    
+    <footer>
+
+        <h4>DETALLE DE LA AUTORIDAD MARÍTIMA: PREFECTURA MAR DEL PLATA.</h4>
+
+        <h4>Dirección oficina expedidora: AV. DE LOS PESCADORES 851 – MAR DEL PLATA.</h4>
+        
+        <h4>Teléfono-Fax: (0223) 480-0715.</h4>
+        
+        <h4>E-mail: mpla@prefecturanaval.gov.ar.</h4>
+        
+    </footer>
+    
+        <script src="especies.js"></script>
+        <script src="script.js"></script>
 
 </body>
 </html>
